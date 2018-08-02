@@ -14,9 +14,11 @@ class Solution:
         :type root: TreeNode
         :rtype: List[int]
         """
+        # recursive call, appends center, then left, then right node
         if root is not None:
             return ([root.val] + Solution.preorderTraversal(self, root.left) +
                     Solution.preorderTraversal(self, root.right))
+        # base case
         else:
             return []
 
@@ -29,8 +31,10 @@ class Solution2:
         :type root: TreeNode
         :rtype: List[int]
         """
+        # base case
         if root is None:
             return []
+        # recursive call, combines left, then center, then right node
         else:
             return (self.inorderTraversal(root.left) + [root.val] +
                     self.inorderTraversal(root.right))
@@ -44,9 +48,10 @@ class Solution3:
         :type root: TreeNode
         :rtype: List[int]
         """
+        # base case
         if root is None:
             return []
+        # recursive call, combines left, then right, then center node
         else:
-            return (self.postorderTraversal(root.left) + 
+            return (self.postorderTraversal(root.left) +
                     self.postorderTraversal(root.right) + [root.val])
-

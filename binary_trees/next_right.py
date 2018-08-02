@@ -19,7 +19,8 @@ class Solution:
             return
         while node is not None:
             # loop through nodes in this level, assigning nexts
-            # assumption: previous level (node's level) has all nexts assigned correctly
+            # assumption: previous level (node's level)
+            # has all nexts assigned correctly
 
             # assign left's next to right if applicable
             if node.left is not None:
