@@ -8,4 +8,4 @@ I found the heap data structure interesting, particularly the concept of represe
 
 ### Binary Trees
 
-Developed as solutions to problems found online, these algorithms showcase recursion on binary trees for the most part; they are all efficient and all have low running times.
+Developed as solutions to problems found online, these algorithms showcase recursion on binary trees for the most part. I'm most proud of the algorithm to construct a tree from its preorder and inorder traversals alone!
